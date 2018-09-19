@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+
+    android:weightSum="1">
+ <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+
+       android:layout_height="wrap_content">
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:layout_height="60dp"
+           android:text="Home"
+           android:id="@+id/Home"
+           android:layout_alignParentTop="true"
+           android:textColor="#FAFAFA"
+           android:background="#4E342E"
+
+           />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:textColor="#FAFAFA"
+           android:layout_height="60dp"
+           android:text="Video"
+           android:id="@+id/video"
+           android:background="#4E342E"
+           />
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:text="latest"
+         android:height="60dp"
+         android:textColor="#FAFAFA"
+         android:background="#4E342E"
+         android:id="@+id/latest"/>
+
+
+   </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/crazy2"
+            android:id="@+id/imageView" />
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+
+            android:text="Welcome to my labortory where safety is #1 priority "
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:id="@+id/textView3"
+           />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingRight="16dp"
+
+            android:paddingLeft="16dp"
+
+            android:text="9,358,801 subscribers • 1,804,453,865 views"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <Button
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:text="Joined 18 May 2012"/>
+        <Button
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:text="Description"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            style="@style/Widget.AppCompat.Button"
+            android:text="Fan Mail or if you want me review your product on my channels: Crazy Russian Hacker P.O. Box 49 Waynesville, NC 28786"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
